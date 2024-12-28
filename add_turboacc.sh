@@ -122,5 +122,7 @@ cp -RT "$TMPDIR/package/firewall4-$FIREWALL4_VERSION/firewall4" ./package/networ
 cp -RT "$TMPDIR/package/libnftnl-$LIBNFTNL_VERSION/libnftnl" ./package/libs/libnftnl
 cp -RT "$TMPDIR/package/nftables-$NFTABLES_VERSION/nftables" ./package/network/utils/nftables
 
+sed -i 's/101/190/' package/turboacc/luci-app-turboacc/luasrc/controller/turboacc.lua
+
 echo "Finish"
 exit 0
